@@ -39,6 +39,7 @@ def authenticate_user():
             if user is None:
                 abort(403)
 
+
 @app.errorhandler(401)
 def unauthorized(error) -> str:
     """ Unauthorized error handler
